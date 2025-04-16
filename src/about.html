@@ -5,91 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Elvis Odhiambo</title>
     <script src="https://cdn.tailwindcss.com"></script>
-      <link rel="icon" href="img/avatarprofile.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/avatarprofile.png" type="image/x-icon">
 </head>
 <body class="bg-gray-900 text-gray-200 font-sans">
-    <nav class="flex justify-between items-center p-6 bg-gray-900 text-gray-300">
-        <div class="flex space-x-6">
-            <a href="index.html" class="hover:text-white">Home</a>
-            <a href="project.html" class="hover:text-white">Projects</a>
-            <a href="about.html" class="text-orange-500 font-semibold">About</a>
-            <a href="getintouch.html" class="hover:text-white">Get In Touch</a>
-        </div>
-        <div class="flex items-center space-x-6">
-    <!-- LinkedIn Link -->
-    <a href="https://www.linkedin.com/in/elvis-odhiambo-44830126b/"
-       target="_blank"
-       class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg">
-        <i class="fab fa-linkedin-in text-lg"></i>
-        <span>LinkedIn</span>
-    </a>
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                            class="text-gray-400 hover:text-white focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
 
-    <!-- Email Link -->
-    <a href="getintouch.html"
-       class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-md hover:shadow-lg">
-        <i class="fas fa-envelope text-lg"></i>
-        <span>Email Me</span>
-    </a>
-</div>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="index.html" class="hover:text-white">Home</a>
+                    <a href="project.html" class="hover:text-white">Projects</a>
+                    <a href="about.html" class="text-orange-500 font-semibold">About</a>
+                    <a href="getintouch.html" class="hover:text-white">Get In Touch</a>
+                </div>
+
+                <!-- Desktop buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="https://www.linkedin.com/in/elvis-odhiambo-44830126b/" target="_blank"
+                       class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg text-sm">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="getintouch.html"
+                       class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-md hover:shadow-lg text-sm">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-3 px-2">
+            <div class="flex flex-col space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
+                <a href="project.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-orange-500 hover:bg-gray-700">About</a>
+                <a href="getintouch.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Get In Touch</a>
+                <div class="pt-2 border-t border-gray-700">
+                    <a href="https://www.linkedin.com/in/elvis-odhiambo-44830126b/" target="_blank"
+                       class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">
+                        <div class="flex items-center gap-2">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </div>
+                    </a>
+                    <a href="getintouch.html"
+                       class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Me</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </nav>
-    <div class="max-w-4xl mx-auto p-6 bg-gray-800 shadow-lg rounded-lg mt-10">
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 bg-gray-800 shadow-lg rounded-lg mt-6 sm:mt-10">
         <!-- Profile Section -->
-        <div class="flex items-center space-x-6">
-            <img src="img/avatarprofile.png" alt="Profile Picture" class="w-32 h-32 rounded-full border-4 border-orange-500">
-            <div>
-                <h1 class="text-3xl font-bold text-orange-400">Elvis Odhiambo</h1>
-                <p class="text-gray-300">Android Developer | Kotlin & Java Expert</p>
-                <p class="text-gray-400">Nairobi, Kenya | <a href="mailto:elvisodhiambo255@gmail.com" class="text-blue-400">elvisodhiambo255@gmail.com</a></p>
-                <a href="https://www.linkedin.com/in/elvis-odhiambo-44830126b/" target="_blank" class="text-blue-500">LinkedIn Profile</a>
+        <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <img src="img/avatarprofile.png" alt="Profile Picture" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-orange-500">
+            <div class="text-center sm:text-left">
+                <h1 class="text-2xl sm:text-3xl font-bold text-orange-400">Elvis Odhiambo</h1>
+                <p class="text-gray-300 text-sm sm:text-base">Android Developer | Kotlin & Java Expert</p>
+                <p class="text-gray-400 text-sm sm:text-base">Nairobi, Kenya | <a href="mailto:elvisodhiambo255@gmail.com" class="text-blue-400 hover:underline">elvisodhiambo255@gmail.com</a></p>
+                <a href="https://www.linkedin.com/in/elvis-odhiambo-44830126b/" target="_blank" class="text-blue-500 hover:underline text-sm sm:text-base">LinkedIn Profile</a>
             </div>
         </div>
 
         <!-- About Section -->
         <div class="mt-6">
-            <h2 class="text-2xl font-semibold text-orange-400">About Me</h2>
-            <p class="text-gray-300 mt-2">Results-driven Android Developer with 3+ years of experience in native Android development, specializing in Kotlin and Java. Passionate about designing scalable applications, integrating APIs, and optimizing app performance.</p>
+            <h2 class="text-xl sm:text-2xl font-semibold text-orange-400">About Me</h2>
+            <p class="text-gray-300 mt-2 text-sm sm:text-base">Results-driven Android Developer with 3+ years of experience in native Android development, specializing in Kotlin and Java. Passionate about designing scalable applications, integrating APIs, and optimizing app performance.</p>
         </div>
 
         <!-- Hard Skills with Progress Bars -->
-       <div class="container mx-auto px-6 py-12">
-        <h2 class="text-2xl font-semibold text-orange-400 text-center">Technical Skills</h2>
-        <div class="mt-6 max-w-lg mx-auto">
-            <p class="text-gray-300">Kotlin (90%)</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 90%"></div>
-            </div>
-            <p class="text-gray-300">Java (85%)</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 85%"></div>
-            </div>
-            <p class="text-gray-300">XML (80%)</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 80%"></div>
-            </div>
-            <p class="text-gray-300">Android SDK (88%)</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 88%"></div>
-            </div>
-            <p class="text-gray-300">Jetpack Compose (75%)</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 75%"></div>
-            </div>
-            <p class="text-gray-300">Retrofit (85%)</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 85%"></div>
-            </div>
-            <p class="text-gray-300">Firebase (80%)</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 80%"></div>
+        <div class="mt-6 px-2 sm:px-0">
+            <h2 class="text-xl sm:text-2xl font-semibold text-orange-400 text-center sm:text-left">Technical Skills</h2>
+            <div class="mt-4 max-w-lg mx-auto sm:mx-0">
+                <div class="mb-4">
+                    <p class="text-gray-300 text-sm sm:text-base">Kotlin (90%)</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-orange-500 h-2 sm:h-2.5 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="text-gray-300 text-sm sm:text-base">Java (85%)</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-orange-500 h-2 sm:h-2.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="text-gray-300 text-sm sm:text-base">XML (80%)</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-orange-500 h-2 sm:h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="text-gray-300 text-sm sm:text-base">Android SDK (88%)</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-orange-500 h-2 sm:h-2.5 rounded-full" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="text-gray-300 text-sm sm:text-base">Jetpack Compose (75%)</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-orange-500 h-2 sm:h-2.5 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="text-gray-300 text-sm sm:text-base">Retrofit (85%)</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-orange-500 h-2 sm:h-2.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="text-gray-300 text-sm sm:text-base">Firebase (80%)</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2 sm:h-2.5">
+                        <div class="bg-orange-500 h-2 sm:h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
         <!-- Soft Skills -->
         <div class="mt-6">
-            <h2 class="text-2xl font-semibold text-orange-400">Soft Skills</h2>
-            <ul class="list-disc list-inside text-gray-300 mt-2">
+            <h2 class="text-xl sm:text-2xl font-semibold text-orange-400">Soft Skills</h2>
+            <ul class="list-disc list-inside text-gray-300 mt-2 text-sm sm:text-base">
                 <li>Strong problem-solving skills</li>
                 <li>Excellent teamwork and communication</li>
                 <li>Adaptability to new technologies</li>
@@ -97,5 +154,13 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

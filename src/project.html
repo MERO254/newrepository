@@ -5,78 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Studies</title>
     <script src="https://cdn.tailwindcss.com"></script>
-      <link rel="icon" href="img/avatarprofile.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/avatarprofile.png" type="image/x-icon">
 </head>
 <body class="bg-gray-900 text-gray-200 font-sans">
 
     <!-- Navbar -->
-    <nav class="flex justify-between items-center p-6 bg-gray-800 text-gray-300 shadow-lg">
-        <div class="flex space-x-6">
-            <a href="index.html" class="hover:text-orange-400">Home</a>
-            <a href="project.html" class="text-orange-500 font-semibold">Projects</a>
-            <a href="about.html" class="hover:text-orange-400">About</a>
-            <a href="getintouch.html" class="hover:text-orange-400">Get In Touch</a>
-        </div>
-        <div class="flex items-center space-x-6">
-    <!-- LinkedIn Link -->
-    <a href="https://www.linkedin.com/in/elvis-odhiambo-44830126b/"
-       target="_blank"
-       class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg">
-        <i class="fab fa-linkedin-in text-lg"></i>
-        <span>LinkedIn</span>
-    </a>
+    <nav class="bg-gray-800 text-gray-300 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                            class="text-gray-400 hover:text-white focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
 
-    <!-- Email Link -->
-    <a href="getintouch.html"
-       class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-md hover:shadow-lg">
-        <i class="fas fa-envelope text-lg"></i>
-        <span>Email Me</span>
-    </a>
-</div>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="index.html" class="hover:text-orange-400">Home</a>
+                    <a href="project.html" class="text-orange-500 font-semibold">Projects</a>
+                    <a href="about.html" class="hover:text-orange-400">About</a>
+                    <a href="getintouch.html" class="hover:text-orange-400">Get In Touch</a>
+                </div>
+
+                <!-- Desktop buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="https://www.linkedin.com/in/elvis-odhiambo-44830126b/" target="_blank"
+                       class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg text-sm">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="getintouch.html"
+                       class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-md hover:shadow-lg text-sm">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-700 pb-3 px-2">
+            <div class="flex flex-col space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-orange-400 hover:bg-gray-600">Home</a>
+                <a href="project.html" class="block px-3 py-2 rounded-md text-base font-medium text-orange-400 hover:bg-gray-600">Projects</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-orange-400 hover:bg-gray-600">About</a>
+                <a href="getintouch.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-orange-400 hover:bg-gray-600">Get In Touch</a>
+                <div class="pt-2 border-t border-gray-600">
+                    <a href="https://www.linkedin.com/in/elvis-odhiambo-44830126b/" target="_blank"
+                       class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-600">
+                        <div class="flex items-center gap-2">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </div>
+                    </a>
+                    <a href="getintouch.html"
+                       class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-600">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Me</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="container mx-auto px-6 py-12 text-center">
-        <h1 class="text-3xl font-bold text-orange-400">Projects</h1>
-        <p class="text-gray-400 mt-2">Solving user & business problems for over 2 years. Creating meaningful digital experiences.</p>
+    <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12 text-center">
+        <h1 class="text-2xl sm:text-3xl font-bold text-orange-400">Projects</h1>
+        <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Solving user & business problems for over 2 years. Creating meaningful digital experiences.</p>
     </div>
 
     <!-- Case Study Sections -->
-    <div class="container mx-auto px-6 space-y-12">
+    <div class="container mx-auto px-4 sm:px-6 space-y-8 sm:space-y-12">
 
         <!-- Fintech Case Study -->
-        <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg p-6 shadow-lg">
-            <div class="w-full md:w-1/2 p-4 text-left">
-                <span class="bg-orange-500 text-gray-900 px-3 py-1 rounded-full text-sm">Ecommerce Application</span>
-                <h2 class="text-xl font-bold mt-2 text-orange-400">Snapeats</h2>
-                <p class="text-gray-300 mt-2">Snapeats is a vibrant e-commerce platform specializing in fresh and delicious food products. Whether you're craving gourmet meals, fresh ingredients, or snacks, Snapeats delivers quality and convenience right to your doorstep.</p>
-                <a href="snapeats.html" class="bg-orange-500 text-gray-900 px-4 py-2 rounded-lg inline-block mt-4 hover:bg-orange-600">View Project →</a>
+        <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg">
+            <div class="w-full md:w-1/2 p-3 sm:p-4 text-left order-2 md:order-1">
+                <span class="bg-orange-500 text-gray-900 px-3 py-1 rounded-full text-xs sm:text-sm">Ecommerce Application</span>
+                <h2 class="text-lg sm:text-xl font-bold mt-2 text-orange-400">Snapeats</h2>
+                <p class="text-gray-300 mt-2 text-sm sm:text-base">Snapeats is a vibrant e-commerce platform specializing in fresh and delicious food products. Whether you're craving gourmet meals, fresh ingredients, or snacks, Snapeats delivers quality and convenience right to your doorstep.</p>
+                <a href="snapeats.html" class="bg-orange-500 text-gray-900 px-4 py-2 rounded-lg inline-block mt-3 sm:mt-4 hover:bg-orange-600 transition-colors duration-300 text-sm sm:text-base">
+                    View Project →
+                </a>
             </div>
-            <img src="img/snapets.webp" alt="snapeats" class="w-[500px] h-[400px] rounded-lg shadow-lg">
+            <img src="img/snapets.webp" alt="snapeats" class="w-full md:w-1/2 h-auto max-h-[300px] sm:max-h-[400px] object-cover rounded-lg shadow-lg order-1 md:order-2 mb-4 md:mb-0">
         </div>
 
         <!-- Edtech Case Study -->
-        <div class="flex flex-col md:flex-row-reverse items-center bg-gray-800 rounded-lg p-6 shadow-lg">
-            <div class="w-full md:w-1/2 p-4 text-left">
-                <span class="bg-blue-500 text-gray-900 px-3 py-1 rounded-full text-sm">Social Application</span>
-                <h2 class="text-xl font-bold mt-2 text-blue-400">Chatstar</h2>
-                <p class="text-gray-300 mt-2">Chatster is a dynamic social app that brings people together through seamless messaging, high-quality voice and video calls. Stay connected with friends, create engaging group chats, and share your moments with status updates—all in one place.</p>
-                <a href="chatster.html" class="bg-blue-500 text-gray-900 px-4 py-2 rounded-lg inline-block mt-4 hover:bg-blue-600">View Project →</a>
+        <div class="flex flex-col md:flex-row-reverse items-center bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg">
+            <div class="w-full md:w-1/2 p-3 sm:p-4 text-left">
+                <span class="bg-blue-500 text-gray-900 px-3 py-1 rounded-full text-xs sm:text-sm">Social Application</span>
+                <h2 class="text-lg sm:text-xl font-bold mt-2 text-blue-400">Chatstar</h2>
+                <p class="text-gray-300 mt-2 text-sm sm:text-base">Chatster is a dynamic social app that brings people together through seamless messaging, high-quality voice and video calls. Stay connected with friends, create engaging group chats, and share your moments with status updates—all in one place.</p>
+                <a href="chatster.html" class="bg-blue-500 text-gray-900 px-4 py-2 rounded-lg inline-block mt-3 sm:mt-4 hover:bg-blue-600 transition-colors duration-300 text-sm sm:text-base">
+                    View Project →
+                </a>
             </div>
-            <img src="img/chatster2.webp" alt="Chatstar" class="w-[500px] h-[400px] rounded-lg shadow-lg">
+            <img src="img/chatster2.webp" alt="Chatstar" class="w-full md:w-1/2 h-auto max-h-[300px] sm:max-h-[400px] object-cover rounded-lg shadow-lg mb-4 md:mb-0">
         </div>
 
         <!-- Finance Case Study -->
-        <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg p-6 shadow-lg">
-            <div class="w-full md:w-1/2 p-4 text-left">
-                <span class="bg-green-500 text-gray-900 px-3 py-1 rounded-full text-sm">Telemedical Application</span>
-                <h2 class="text-xl font-bold mt-2 text-green-400">Theracare</h2>
-                <p class="text-gray-300 mt-2">TherCare is an innovative telemedicine application that seamlessly connects patients with experienced doctors for virtual consultations. Whether you need medical advice, prescriptions, or follow-up care, TherCare ensures fast, reliable, and secure healthcare access—anytime, anywhere.</p>
-                <a href="telemedical.html" class="bg-green-500 text-gray-900 px-4 py-2 rounded-lg inline-block mt-4 hover:bg-green-600">View Project →</a>
+        <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg">
+            <div class="w-full md:w-1/2 p-3 sm:p-4 text-left order-2 md:order-1">
+                <span class="bg-green-500 text-gray-900 px-3 py-1 rounded-full text-xs sm:text-sm">Telemedical Application</span>
+                <h2 class="text-lg sm:text-xl font-bold mt-2 text-green-400">Theracare</h2>
+                <p class="text-gray-300 mt-2 text-sm sm:text-base">TherCare is an innovative telemedicine application that seamlessly connects patients with experienced doctors for virtual consultations. Whether you need medical advice, prescriptions, or follow-up care, TherCare ensures fast, reliable, and secure healthcare access—anytime, anywhere.</p>
+                <a href="telemedical.html" class="bg-green-500 text-gray-900 px-4 py-2 rounded-lg inline-block mt-3 sm:mt-4 hover:bg-green-600 transition-colors duration-300 text-sm sm:text-base">
+                    View Project →
+                </a>
             </div>
-            <img src="img/telemed.webp" alt="Theracare" class="w-[500px] h-[400px] rounded-lg shadow-lg">
+            <img src="img/telemed.webp" alt="Theracare" class="w-full md:w-1/2 h-auto max-h-[300px] sm:max-h-[400px] object-cover rounded-lg shadow-lg order-1 md:order-2 mb-4 md:mb-0">
         </div>
     </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
