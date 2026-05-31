@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serenity - Mental Health Support Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50/60 text-slate-800 font-sans antialiased">
+
+<!-- NAVBAR -->
+<nav class="backdrop-blur-md bg-white/80 border-b border-slate-100 flex flex-col md:flex-row justify-between items-center px-6 py-4 sticky top-0 z-50 shadow-sm">
+  <div class="flex items-center gap-2">
+    <div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white font-black text-sm tracking-tighter">S</div>
+    <h1 class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent tracking-tight">Serenity</h1>
+  </div>
+
+  <div class="flex flex-wrap items-center gap-6 mt-4 md:mt-0 font-medium text-sm text-slate-600">
+    <a href="#features" class="hover:text-blue-600 transition-colors">Features</a>
+    <a href="#tech" class="hover:text-blue-600 transition-colors">Tech Stack</a>
+    <a href="#github" class="hover:text-blue-600 transition-colors">GitHub</a>
+    <a href="#demo" class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 shadow-md shadow-blue-100 transition-all transform hover:-translate-y-0.5">
+      Request Demo
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative overflow-hidden text-center py-20 lg:py-28 px-6 bg-gradient-to-b from-blue-50/80 via-white to-transparent">
+  <div class="relative z-10 max-w-5xl mx-auto">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100/60 mb-6">
+      <span class="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span> Project Introduction
+    </span>
+    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-none mb-8">Introduction</h2>
+
+    <p class="text-slate-600 max-w-4xl mx-auto leading-relaxed text-base md:text-lg whitespace-pre-line text-left md:text-center font-normal">
+The Mental Health Support Chat Platform is a technological solution aimed childhood providing accessible, safe, and anonymous emotional support for individuals, especially youths, who may be struggling with mental health challenges. Traditional support systems, such as in-person therapy and counseling, are often expensive, limited in availability, and sometimes hindered by stigma. This project addresses these challenges by leveraging modern mobile technologies and artificial intelligence to create a supportive digital environment.
+
+The system is developed using Android Kotlin for the mobile application, integrated with backend and AI technologies to enable real-time communication and intelligent moderation. It allows users to engage in anonymous peer-to-peer chat, where individuals can share their thoughts and experiences freely without fear of judgment or identity exposure. AI-powered moderation is incorporated to monitor conversations, detect harmful or risky content, and promote a safe and supportive environment.
+
+Key features of the system include a peer-to-peer chat system that enables real-time anonymous communication among users, fostering connection and mutual support. The platform also includes an AI moderation system that analyzes conversations to identify potentially harmful content and provide appropriate interventions when necessary. A mood tracking feature allows users to log and monitor their emotional states over time, helping them gain better self-awareness. Additionally, a motivational text feature delivers encouraging and supportive messages to users, promoting positivity and emotional resilience.
+
+The system aims to reduce feelings of isolation, encourage open communication, and provide timely emotional support. By integrating AI-driven moderation with user-friendly mobile technology, the platform enhances safety, accessibility, and engagement. This project demonstrates how technology can be effectively utilized to support mental well-being, offering a scalable and practical solution for modern society.
+    </p>
+  </div>
+  <!-- Blur backdrops -->
+  <div class="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl -z-10"></div>
+  <div class="absolute top-1/3 right-1/4 -translate-y-1/2 translate-x-1/2 w-72 h-72 bg-indigo-100/40 rounded-full blur-3xl -z-10"></div>
+</header>
+
+<!-- FEATURES -->
+<section id="features" class="py-20 px-6 max-w-7xl mx-auto">
+  <div class="text-center max-w-2xl mx-auto mb-16">
+    <h3 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">Features</h3>
+    <div class="h-1 w-12 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+    <!-- FEATURE CARD 1 -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+      <!-- IMAGE AREA FIXED FOR PHONE SCREENSHOTS -->
+      <div class="h-[450px] bg-slate-50/80 border-b border-slate-100 flex items-center justify-center p-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/[0.02]"></div>
+        <img src="img/login_img.jpeg" class="max-h-full w-full object-contain rounded-xl shadow-lg shadow-slate-200/60 group-hover:scale-[1.02] transition-transform duration-500 relative z-10" />
+      </div>
+
+      <div class="p-6 flex flex-col flex-grow">
+        <h4 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight">User Authentication and Profile Management</h4>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed whitespace-pre-line flex-grow font-normal">
+The system includes secure user authentication with login and registration functionalities. Users can create accounts using their credentials and securely access the platform through Firebase Authentication.
+
+Once logged in, users can access and manage their profiles, which include basic personal information and activity history. The system ensures that user data is protected through secure session handling and access control mechanisms. This feature provides personalization and continuity within the platform.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURE CARD 2 -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+      <div class="h-[450px] bg-slate-50/80 border-b border-slate-100 flex items-center justify-center p-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/[0.02]"></div>
+        <img src="img/generalsearch_img.jpeg" class="max-h-full w-full object-contain rounded-xl shadow-lg shadow-slate-200/60 group-hover:scale-[1.02] transition-transform duration-500 relative z-10" />
+      </div>
+
+      <div class="p-6 flex flex-col flex-grow">
+        <h4 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight">General Chat (Peer-to-Peer Communication)</h4>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed whitespace-pre-line flex-grow font-normal">
+The platform supports peer-to-peer chat functionality, allowing users to communicate with one another in real time. This feature enables users to share experiences, offer support, and build a sense of community within the platform.
+
+Messages are transmitted and stored using Firebase’s real-time capabilities, ensuring instant delivery and synchronization across devices. The chat interface is designed to be simple and familiar, similar to modern messaging applications, promoting ease of use and engagement.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURE CARD 3 -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+      <div class="h-[450px] bg-slate-50/80 border-b border-slate-100 flex items-center justify-center p-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/[0.02]"></div>
+        <img src="img/psychology_img.jpeg" class="max-h-full w-full object-contain rounded-xl shadow-lg shadow-slate-200/60 group-hover:scale-[1.02] transition-transform duration-500 relative z-10" />
+      </div>
+
+      <div class="p-6 flex flex-col flex-grow">
+        <h4 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight">AI Psychologist (AI Chat Support)</h4>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed whitespace-pre-line flex-grow font-normal">
+A key feature of the system is the AI psychologist, powered by Gemini AI. This feature allows users to interact with an intelligent chatbot that provides immediate emotional support, guidance, and conversational responses.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURE CARD 4 -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+      <div class="h-[450px] bg-slate-50/80 border-b border-slate-100 flex items-center justify-center p-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/[0.02]"></div>
+        <img src="img/mood_tracker.jpeg" class="max-h-full w-full object-contain rounded-xl shadow-lg shadow-slate-200/60 group-hover:scale-[1.02] transition-transform duration-500 relative z-10" />
+      </div>
+
+      <div class="p-6 flex flex-col flex-grow">
+        <h4 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight">Mood Tracker</h4>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed whitespace-pre-line flex-grow font-normal">
+          tracking your daily moods
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURE CARD 5 -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+      <div class="h-[450px] bg-slate-50/80 border-b border-slate-100 flex items-center justify-center p-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/[0.02]"></div>
+        <img src="img/motivation_img.jpeg" class="max-h-full w-full object-contain rounded-xl shadow-lg shadow-slate-200/60 group-hover:scale-[1.02] transition-transform duration-500 relative z-10" />
+      </div>
+
+      <div class="p-6 flex flex-col flex-grow">
+        <h4 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight">Motivation Texts Interface</h4>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed whitespace-pre-line flex-grow font-normal">
+The platform includes a motivation texts interface, which provides users with encouraging and uplifting messages. These messages are designed to improve user mood, promote positivity, and support mental well-being.
+
+Users can access motivational content at any time, offering quick emotional support even outside of active conversations. This feature enhances user engagement and provides an additional layer of mental health support within the application.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURE CARD 6 -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+      <div class="h-[450px] bg-slate-50/80 border-b border-slate-100 flex items-center justify-center p-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/[0.02]"></div>
+        <img src="img/profile_img.jpeg" class="max-h-full w-full object-contain rounded-xl shadow-lg shadow-slate-200/60 group-hover:scale-[1.02] transition-transform duration-500 relative z-10" />
+      </div>
+
+      <div class="p-6 flex flex-col flex-grow">
+        <h4 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight">Profile Management</h4>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed whitespace-pre-line flex-grow font-normal">
+The profile feature allows users to view and update their personal information within the application. Users can manage details such as their name, preferences, and account settings.
+
+This functionality ensures personalization of the user experience and allows users to maintain control over their information. It also supports continuity by linking user activity, such as chat history and interactions, to their profile.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech" class="py-24 bg-gradient-to-b from-slate-900 to-slate-950 text-white relative overflow-hidden">
+  <div class="max-w-5xl mx-auto px-6 relative z-10">
+    <div class="text-center mb-12">
+      <h3 class="text-3xl font-black tracking-tight mb-2">System Features and Tech Stack</h3>
+      <p class="text-blue-400 font-medium text-sm uppercase tracking-wider">Core Framework Overview</p>
+    </div>
+
+    <div class="bg-slate-900/60 border border-slate-800 p-8 sm:p-10 rounded-2xl backdrop-blur-md shadow-2xl text-slate-300 leading-relaxed text-base md:text-lg whitespace-pre-line font-normal">
+The platform is built using Android (Kotlin) with Jetpack Compose for UI design, providing a modern and responsive mobile experience. Firebase is used for authentication and real-time database functionality, ensuring secure and synchronized communication.
+
+Gemini AI is integrated into the backend to power intelligent chat responses and moderation, enabling context-aware emotional support.
+
+The system supports real-time peer-to-peer messaging, mood tracking, motivational messages, and AI-based safety moderation, ensuring a complete mental health support ecosystem.
+    </div>
+  </div>
+  <!-- Technical micro details -->
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl -z-0"></div>
+</section>
+
+<!-- GITHUB -->
+<section id="github" class="py-24 text-center px-6 max-w-4xl mx-auto">
+  <div class="bg-white border border-slate-100 rounded-3xl p-8 sm:p-12 shadow-xl shadow-slate-100/80">
+    <h3 class="text-3xl font-black text-slate-900 tracking-tight">GitHub Repository</h3>
+    <p class="mt-3 text-slate-500 max-w-md mx-auto">
+      Access the full project source code below.
+    </p>
+
+    <a href="https://github.com/MERO254/serenity-mental-health"
+       target="_blank"
+       class="mt-8 inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3.5 rounded-xl font-bold shadow-lg shadow-blue-200 hover:bg-blue-700 transition transform hover:-translate-y-0.5">
+      View on GitHub
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-8 bg-slate-950 border-t border-slate-900 text-slate-500 text-xs font-medium tracking-wide">
+  © 2026 Serenity Mental Health Platform
+</footer>
+
+</body>
+</html>
